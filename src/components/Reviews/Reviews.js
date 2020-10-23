@@ -1,6 +1,7 @@
 import React, { Component }from 'react';
 import Review from './Review/Review';
 
+import { btn, Btn } from './Review/ReviewElement';
 class Reviews extends Component {
     state = {
         reviews: [
@@ -47,17 +48,7 @@ class Reviews extends Component {
                         margin: '0 auto 30px auto'
                         }}>Reviews</h1>
                 {messages}
-                <button style={{
-                    backgroundColor: '#F58C23',
-                    color: '#fff',
-                    border: 'none',
-                    borderRadius: '40px',
-                    padding: '15px 30px',
-                    cursor: 'pointer',
-                    boxShadow: '0px 10px 20px #00000029',
-                    // width: '50%',
-                    margin: '0 45%',
-                }}>See More reviews</button>
+                <Btn>See More reviews</Btn>
             </div>
         )
     }

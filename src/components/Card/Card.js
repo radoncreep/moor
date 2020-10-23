@@ -71,9 +71,9 @@ const Card = () => {
 
         return (
                 <>
-                  <CardLayout>
+                  <CardLayout >
                         {imageDb.map(photo => (
-                                <CardContainer key={photo.brand}> 
+                                <CardContainer id="cal" key={photo.brand}> 
                                         <CardImage to=""><img src={photo.title} style={{width: '100%', height: '76%'}} alt="img"/></CardImage>
                                         {/* <CardImage style = {{backgroundImage: `url(require("../../assests/glass1.png"))`}} /> */}
                                                 <CardContent>
@@ -89,7 +89,7 @@ const Card = () => {
                                 </CardContainer>
                         ))}
                   </CardLayout>
-                  <Link to="/" 
+                  {/* <Link to="/" 
                         style={{ 
                                 display: 'flex', 
                                 alignItems: "center", 
@@ -98,7 +98,7 @@ const Card = () => {
                                 outline: 'none',
                                 color: '#000',
                                 cursor: 'pointer'
-                                }}>Show More</Link>
+                                }}>Show More</Link> */}
                 </>
         )              
 }
